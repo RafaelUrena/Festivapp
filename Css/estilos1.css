@@ -89,3 +89,7 @@ and open the template in the editor.
     font-family: 'Akronim', cursive;
     color: #fff;
 }
+
+.modal-footer{
+    background-color: #343a40;
+}

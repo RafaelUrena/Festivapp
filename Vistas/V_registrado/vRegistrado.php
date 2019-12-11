@@ -17,8 +17,12 @@
 
         <!-- Course CSS -->
         <link rel="stylesheet" href="../../Css/estilos1.css" ref="styles.css" />
+        
         <!-- Iconos -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+        
+        <!-- Tipografía-->
+        <link href="https://fonts.googleapis.com/css?family=Akronim|Archivo+Black|Quicksand&display=swap" rel="stylesheet">
         
     </head>
 
@@ -28,16 +32,16 @@
         <div class="container-fluid">
 
             <!-- HEADER -->
-            <div class="row bg-dark border-pink">
+            <div class="row bg-dark border-pink align-items-center">
 
-                <div class="col-md-4 ">
-                    <img src="../../Imagenes/LogoFestivapp.svg" alt="logo" class="w-25">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <img src="../../Imagenes/LogoFestivapp.svg" alt="logo" class="img-fluid w-25">
                 </div>
 
-                <div class="col-md-4 ">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
                     <?php 
-                    include_once '../../Modelo/Usuario.php';
+                    include_once '../../Modelo/Clases/Usuario.php';
                     
                     session_start();
                     $userlog = unserialize($_SESSION['userlogeado']); ?>
@@ -45,7 +49,7 @@
                     
                 </div>
 
-                <div class="col-md-4 ">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
                     <form class="form-inline justify-content-end" action="../../Controladores/Controlador_registro_inicio.php" method="POST">
                         <input type="submit" name="logout" class="btn btn-pink btn-sm mr-2 mt-3" value="Cerrar Sesión">
@@ -71,8 +75,6 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Noticias</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Últimas noticias</a>
-                                    <a href="#" class="dropdown-item">Noticias destacadas</a>
                                     <a href="#" class="dropdown-item">Crear Noticia</a>
                                 </div>
                             </li>
@@ -98,15 +100,14 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>           
-                    <span class="oi oi-cog"></span>
+                    </div>
 
                 </nav>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="carousel slide carousel-fade" data-ride="carousel" id="micarrusel">
+           <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="carousel slide" data-ride="carousel" id="micarrusel">
                         <ol class="carousel-indicators">
                             <li data-target="#micarrusel" data-slide-to=0 class="active"></li>
                             <li data-target="#micarrusel" data-slide-to=1></li>
@@ -120,62 +121,62 @@
                             <li data-target="#micarrusel" data-slide-to=9></li>
                         </ol>
                         <div class="carousel-inner carousel-altura mt-3">
-                            <div class="carousel-item item active">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/Tomorrow1.jpg" alt="Tomorrowland">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/Tomorrow1.jpg" alt="Tomorrowland">
                                 <div class="carousel-caption d-none d-md-block">
                                     Tomorrowland
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 h-25 img-fluid" src="../../Imagenes/Dreambeachvillaricos1.jpg" alt="Dreambeach">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/Dreambeachvillaricos1.jpg" alt="Dreambeach">
                                 <div class="carousel-caption d-none d-md-block">
                                     Dreambeach Villaricos
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/arenalsound1.jpg" alt="Arenal Sound">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/arenalsound1.jpg" alt="Arenal Sound">
                                 <div class="carousel-caption d-none d-md-block">
                                     Arenal Sound
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/juergasfestival.jpg" alt="JuergasFestival">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/juergasfestival.jpg" alt="JuergasFestival">
                                 <div class="carousel-caption d-none d-md-block">
                                     Juergas Festival
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 h-25 img-fluid" src="../../Imagenes/medusasunbeach1.jpg" alt="Medusa Sun Beach">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/medusasunbeach1.jpg" alt="Medusa Sun Beach">
                                 <div class="carousel-caption d-none d-md-block">
                                     Medusa Sun Beach
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/primaverasound1.jpg" alt="Primavera Sound">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/primaverasound1.jpg" alt="Primavera Sound">
                                 <div class="carousel-caption d-none d-md-block">
                                     Primavera Sound
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/reggaesunska.jpg" alt="ReggaeSunSka">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/reggaesunska.jpg" alt="ReggaeSunSka">
                                 <div class="carousel-caption d-none d-md-block">
                                     ReggaeSunSka
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/resurrection1.jpg" alt="Resurrection">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/resurrection1.jpg" alt="Resurrection">
                                 <div class="carousel-caption d-none d-md-block">
                                     Resurrection
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/rockinrio1.jpg" alt="Rock in Rio">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/rockinrio1.jpg" alt="Rock in Rio">
                                 <div class="carousel-caption d-none d-md-block">
                                     Rock in Rio
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <img class="d-block w-100 img-fluid" src="../../Imagenes/viniarock1.jpg" alt="ViñaRock">
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluidC" src="../../Imagenes/Carrusel/viniarock1.jpg" alt="ViñaRock">
                                 <div class="carousel-caption d-none d-md-block">
                                     Viña Rock
                                 </div>
@@ -219,34 +220,42 @@
             </div>
 
             <div class="row bg-secondary border-top border-dark align-items-center">
-                <div class="col-4">
+
+                <div class="col-3">
                     <div class="media">
                         <img src="../../Imagenes/LogoFestivapp.svg" alt="logo" class="w-25 logo-b">
                         <div class="media-body align-self-center">
-                            <h3 class="text-center">FestivApp</h3>
+                            <h2 class="letraLogo">FestivApp</h2>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-2">
-                    <ul class="pre-foo mt-4 pt-3">
-                        <li><h5>Mi Cuenta</h5></li>
-                        <a href="#"><li>Inicio</li></a>
-                        <a href="#"><li>Perfil</li></a>
-                    </ul>
-
+                <div class="col-6">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Mi Cuenta</th>
+                                <th>Sobre Nosotros</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pre-foo"><a href="#">Inicio</a></td>
+                                <td class="pre-foo"><a href="#">¿Quienes Somos?</a></td>
+                            </tr>
+                            <tr>
+                                <td class="pre-foo"><a href="#">Registrate</a></td>
+                                <td class="pre-foo"><a href="#">Contacto</a></td>
+                            </tr>
+                            <tr>
+                                <td class="pre-foo"><a href="#">Inicia Sesion</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="col-2">
-                    <ul class="pre-foo  mt-4 pt-3">
-                        <li><h5>Sobre Nosotros</h5></li>
-                        <a href="#"><li>¿Quienes somos?</li></a>
-                        <a href="#"><li>Contacto</li></a>
-                    </ul>
-                </div>
 
-                <div class="col-4">
+                <div class="col-3">
                     <form class="form-inline justify-content-around">
                         <input type="button" class="btn btn-pink btn-sm mr-2 mt-3" data-toggle="modal" data-target="#registro" value="Contáctanos">
                     </form>

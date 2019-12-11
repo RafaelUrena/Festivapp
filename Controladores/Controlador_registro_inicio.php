@@ -1,7 +1,7 @@
 <?php
 
 include_once '../Modelo/ConexionEstatica.php';
-include_once '../Modelo/Usuario.php';
+include_once '../Modelo/Clases/Usuario.php';
 session_start();
 
 if (isset($_REQUEST['registrar'])) {

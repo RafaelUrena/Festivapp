@@ -57,26 +57,22 @@
                             <li class="nav-item active">
                                 <a href="#" class="nav-link">Inicio</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Noticias</a>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Últimas noticias</a>
-                                    <a href="#" class="dropdown-item">Noticias destacadas</a>
-                                </div>
+                            <li class="nav-item">
+                                <a href="Vistas/Noticias/Noticias.php" class="nav-link">Noticias</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ver Festivales</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Por Nombre</a>
-                                    <a href="#" class="dropdown-item">Por Localización</a>
-                                    <a href="#" class="dropdown-item">Por Estilo Musical</a>
+                                    <a href="Vistas/Festivales/Festivales.php" class="dropdown-item">Por Nombre</a>
+                                    <a href="Vistas/Festivales/fLocalizacion.php" class="dropdown-item">Por Localización</a>
+                                    <a href="Vistas/Festivales/fEstilo.php" class="dropdown-item">Por Estilo Musical</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
                                 <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">¿Quienes Somos?</a>
-                                    <a href="#" class="dropdown-item">Contacto</a>
+                                    <a href="Vistas/Contacto/QuienesSomos.php" class="dropdown-item">¿Quienes Somos?</a>
+                                    <a href="Vistas/Contacto/Contacto.php" class="dropdown-item">Contacto</a>
                                 </div>
                             </li>
                         </ul>
@@ -193,7 +189,7 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pC_QHsMUp_4"></iframe>
+                        <iframe class="embed-responsive-item" src="Multimedia/Festivapp1.mp4"></iframe>
                     </div>
 
                 </div>
@@ -202,7 +198,7 @@
 
             <div class="row bg-secondary border-top border-dark align-items-center">
 
-                <div class="col-4">
+                <div class="col-3">
                     <div class="media">
                         <img src="Imagenes/LogoFestivapp.svg" alt="logo" class="w-25 logo-b">
                         <div class="media-body align-self-center">
@@ -211,7 +207,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6">
                     <table class="table table-borderless">
                         <thead>
                             <tr>
@@ -236,7 +232,7 @@
                 </div>
 
 
-                <div class="col-4">
+                <div class="col-3">
                     <form class="form-inline justify-content-around">
                         <input type="button" class="btn btn-pink btn-sm mr-2 mt-3" data-toggle="modal" data-target="#registro" value="Contáctanos">
                     </form>
@@ -275,6 +271,7 @@
                                 <input type="submit" name="login" class="btn btn-pink" value="Entrar">
                             </div>
                         </form>
+                        <span></span>
                     </div>
                 </div>
             </section>
